@@ -1,0 +1,55 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "network",
+    "bluetooth",
+    "battery",
+//    "cpu",
+//    "memory",
+//    "disk",
+    "pulseaudio",
+    "backlight",
+    "tray"
+  ],
+  "hyprland/workspaces": {
+    "format": "{name}" 
+  },
+  "clock": {
+    "format": "{:%Y-%m-%d %H:%M:%S}"
+  },
+  "cpu": {
+    "format": "CPU {usage}%"
+  },
+  "memory": {
+    "format": "RAM {used}MB/{total}MB"
+  },
+  "disk": {
+    "format": "Disk {used}/{total}G"
+  },
+  "network": {
+    "format-wifi": "  {essid} ({signalStrength}%)",
+    "format-ethernet": "  {ipaddr}",
+    "format-disconnected": "⚠ No Network",
+    "on-click": "nm-connection-editor"
+  },
+  "bluetooth": {
+    "format": " {status}",
+    "format-connected": " {device_name}",
+    "format-off": "Bluetooth Off",
+    "on-click": "blueman-manager"
+  },
+  "battery": {
+    "format": "  {capacity}%",
+    "format-charging": "  Charging {capacity}%"
+  },
+  "pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": " Muted"
+  },
+  "backlight": {
+    "format": " {percent}%"
+  }
+}

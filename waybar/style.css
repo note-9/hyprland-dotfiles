@@ -1,0 +1,53 @@
+/* Waybar DWM-like theme */
+* {
+    font-family: monospace;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0.85);
+    border-bottom: none;
+}
+
+#workspaces button {
+    padding: 4px 8px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+}
+
+#workspaces button.active, #workspaces button.focused {
+    background: #005577;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+#clock, #cpu, #memory, #disk, #network, #bluetooth, #battery, #pulseaudio, #backlight, #tray {
+    padding: 0 12px;
+    background: #005577; /* DWM blue for status area */
+} 
+
+#battery.charging {
+    color: #a3be8c;
+}
+
+#battery.critical {
+    color: #ff0000;
+}
+
+#network.disconnected {
+    color: #ff0000;
+}
+
+#pulseaudio.muted {
+    color: #ff0000;
+}
+
+#tray {
+    padding: 0 6px;
+}
+
+#bluetooth.off {
+    color: #ff0000;
+}
